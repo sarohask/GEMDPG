@@ -10,7 +10,7 @@ nJobs = int(sys.argv[2])
 nEvent = int(sys.argv[3])
 
 cmsswBase = os.environ['CMSSW_BASE']
-username = "sarohassk"
+username = "sarohask"
 dirName = "root://uosaf0007.sscc.uos.ac.kr:1094//xrootd/store/user/yekang/TrGEMG4/GE11/%s"%(jobName)
     
 Dirname = "%s/src/GEMDPG/TrGEMG4/test/Batch/%s"%(cmsswBase,jobName)

@@ -13,7 +13,7 @@
 #include "G4VModularPhysicsList.hh"
 #include "G4RadioactiveDecayPhysics.hh"
 
-#include "G4VisExecutive.hh"
+
 
 #include "GEMDPG/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
 #include "GEMDPG/TrGEMG4/interface/TrGEMActionInitialization.hh"
