@@ -1,5 +1,5 @@
 
-#include "/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
 
 #include "G4Event.hh"
 #include "G4ParticleTable.hh"

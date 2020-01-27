@@ -1,6 +1,6 @@
 
-#include "/TrGEMG4/interface/TrGEMStepMax.hh"
-#include "/TrGEMG4/interface/TrGEMStepMaxMessenger.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMStepMax.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMStepMaxMessenger.hh"
 #include "G4VPhysicalVolume.hh"
 
 StepMax::StepMax(const G4String& processName)

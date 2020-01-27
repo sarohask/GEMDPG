@@ -1,7 +1,7 @@
 #ifndef TrGEMAnalysis_h
 #define TrGEMAnalysis_h 1
 
-#include "/TrGEMG4/interface/TrGEMHit.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMHit.hh"
 #include "TTree.h"
 #include "TBranch.h"
 #include "TFile.h"

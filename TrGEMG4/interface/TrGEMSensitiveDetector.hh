@@ -2,7 +2,7 @@
 #ifndef TrGEMSensitiveDetector_h
 #define TrGEMSensitiveDetector_h 1
 
-#include "/TrGEMG4/interface/TrGEMHit.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMHit.hh"
 #include "G4VSensitiveDetector.hh"
 
 using namespace std;

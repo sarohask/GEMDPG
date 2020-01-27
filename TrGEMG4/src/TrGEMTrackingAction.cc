@@ -1,6 +1,6 @@
 
-#include "/TrGEMG4/interface/TrGEMTrackingAction.hh"
-#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMTrackingAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4TrackingManager.hh"
 #include "G4Track.hh"
