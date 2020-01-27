@@ -5,5 +5,5 @@
   <use name="xerces-c"/>
   <use name="geant4core"/>
   <use name="hepmc"/>
-  <use name="GEANT4_Simulation_Code/TrGEMG4"/>
+  <use name="TrGEMG4"/>
 </bin>
