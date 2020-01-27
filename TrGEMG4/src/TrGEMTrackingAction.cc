@@ -7,8 +7,8 @@
 #include "G4RunManager.hh"
 
 TrGEMTrackingAction::TrGEMTrackingAction() 
-	: eventID(0), parentID(0), trackID(0), charge(0), globalTime(0.), pdgCode(0), particle(""), kineticEnergy(0.), positionX(0.), positionY(0.), positionZ(0.),
-   	momentumDirectionX(0.), momentumDirectionY(0.), momentumDirectionZ(0.), trackLength(0.0), process(""), volume(""), trackStart(false)
+	: eventID(0), parentID(0), trackID(0), charge(0), globalTime(0.), pdgCode(0), kineticEnergy(0.), positionX(0.), positionY(0.), positionZ(0.),
+   	momentumDirectionX(0.), momentumDirectionY(0.), momentumDirectionZ(0.), trackLength(0.0), particle(""), process(""), volume(""), trackStart(false)
 	{;}
 
 TrGEMTrackingAction::~TrGEMTrackingAction()

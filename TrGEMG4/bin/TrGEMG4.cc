@@ -47,47 +47,18 @@ int main(int argc, char** argv)
   	// initialize G4 kernel
   	runManager->Initialize();
 
-#ifdef G4VIS_USE
- 		G4VisManager* visManager = new G4VisExecutive;
-   	visManager->Initialize();
-#endif    
-          
   	// get the pointer to the UI manager
   	G4UImanager* UImanager = G4UImanager::GetUIpointer();
   
- 		if ( argc == 1 ) 
- 			{
-				// interactive mode : define UI session
-#ifdef G4UI_USE				
-				G4UIExecutive* ui = new G4UIExecutive(argc, argv);
-#endif
-	
-#ifdef G4VIS_USE
-    		UImanager->ApplyCommand("/control/execute init_vis.mac");     
-#endif
-				
-				ui->SessionStart();
-				delete ui;
-	
-#ifdef G4VIS_USE
-      	delete visManager;
-#endif     
-			}
-		else
-			{
-				G4String temp = argv[2];
-  			//UImanager->ApplyCommand("/run/setCut 1 nm");
-  			TrGEMAnalysis::GetInstance()->SetFileName(temp);
-  			G4String command = "/run/beamOn ";
-  			temp = argv[3];
-  			UImanager->ApplyCommand("/control/verbose 0");
-  			UImanager->ApplyCommand("/run/verbose 0");
-  			UImanager->ApplyCommand("/event/verbose 0");
-  			//UImanager->ApplyCommand("/tracking/verbose 2");
-  			UImanager->ApplyCommand("/run/initialize");
-  			UImanager->ApplyCommand("/cuts/setLowEdge 10 eV");
-  			UImanager->ApplyCommand(command+temp);
-			}
+ 		G4String temp = argv[2];
+  	//UImanager->ApplyCommand("/run/setCut 1 nm");
+  	TrGEMAnalysis::GetInstance()->SetFileName(temp);
+  	G4String command = "/run/beamOn ";
+  	temp = argv[3];
+  	UImanager->ApplyCommand("/run/initialize");
+ 		UImanager->ApplyCommand("/cuts/setLowEdge 10 eV");
+  	UImanager->ApplyCommand(command+temp);
+
   	// job termination
   	delete runManager;
   	return 0;
