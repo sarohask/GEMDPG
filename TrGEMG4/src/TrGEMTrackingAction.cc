@@ -1,6 +1,6 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMTrackingAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "/TrGEMG4/interface/TrGEMTrackingAction.hh"
+#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4TrackingManager.hh"
 #include "G4Track.hh"

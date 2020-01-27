@@ -1,6 +1,6 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMRunAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "/TrGEMG4/interface/TrGEMRunAction.hh"
+#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4Run.hh"
 

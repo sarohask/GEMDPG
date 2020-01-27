@@ -1,6 +1,6 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMSteppingAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "/TrGEMG4/interface/TrGEMSteppingAction.hh"
+#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4SteppingManager.hh"
 #include "G4TouchableHistory.hh"

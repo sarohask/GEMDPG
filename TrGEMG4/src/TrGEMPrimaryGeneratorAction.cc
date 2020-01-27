@@ -1,5 +1,5 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
+#include "/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
 
 #include "G4Event.hh"
 #include "G4ParticleTable.hh"

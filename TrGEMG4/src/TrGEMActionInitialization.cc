@@ -1,11 +1,11 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMActionInitialization.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMRunAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMEventAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMSteppingAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMStackingAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMTrackingAction.hh"
+#include "TrGEMG4/interface/TrGEMActionInitialization.hh"
+#include "/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
+#include "/TrGEMG4/interface/TrGEMRunAction.hh"
+#include "/TrGEMG4/interface/TrGEMEventAction.hh"
+#include "/TrGEMG4/interface/TrGEMSteppingAction.hh"
+#include "/TrGEMG4/interface/TrGEMStackingAction.hh"
+#include "/TrGEMG4/interface/TrGEMTrackingAction.hh"
 
 #include "G4String.hh"
 

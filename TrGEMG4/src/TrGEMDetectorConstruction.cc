@@ -1,6 +1,6 @@
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMSensitiveDetector.hh"
+#include "/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
+#include "/TrGEMG4/interface/TrGEMSensitiveDetector.hh"
 
 #include "G4NistManager.hh"
 #include "G4SDManager.hh"

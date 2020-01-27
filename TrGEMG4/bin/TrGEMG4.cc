@@ -22,10 +22,10 @@
 
 #include "G4VisExecutive.hh"
 
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMActionInitialization.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMAnalysis.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMPhysicsList.hh"
+#include "/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
+#include "/TrGEMG4/interface/TrGEMActionInitialization.hh"
+#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "/TrGEMG4/interface/TrGEMPhysicsList.hh"
 
 #include "Randomize.hh"
 

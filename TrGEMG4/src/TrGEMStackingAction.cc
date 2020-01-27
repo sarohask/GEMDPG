@@ -1,5 +1,5 @@
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMStackingAction.hh"
-#include "GEANT4_Simulation_Code/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "/TrGEMG4/interface/TrGEMStackingAction.hh"
+#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4ClassificationOfNewTrack.hh"
 #include "G4Track.hh"
