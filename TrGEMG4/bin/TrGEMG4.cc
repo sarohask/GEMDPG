@@ -13,19 +13,12 @@
 #include "G4VModularPhysicsList.hh"
 #include "G4RadioactiveDecayPhysics.hh"
 
-#ifdef G4UI_USE
-#include "G4VisExecutive.hh"
-#endif
-#ifdef G4UI_USE
-#include "G4UIExecutive.hh"
-#endif
-
 #include "G4VisExecutive.hh"
 
-#include "/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
-#include "/TrGEMG4/interface/TrGEMActionInitialization.hh"
-#include "/TrGEMG4/interface/TrGEMAnalysis.hh"
-#include "/TrGEMG4/interface/TrGEMPhysicsList.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMActionInitialization.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMPhysicsList.hh"
 
 #include "Randomize.hh"
 

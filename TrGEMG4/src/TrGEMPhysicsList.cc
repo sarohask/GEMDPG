@@ -1,5 +1,6 @@
 
 #include "GEMDPG/TrGEMG4/interface/TrGEMPhysicsList.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMStepMax.hh"
 
 #include "G4EmStandardPhysics.hh"
 #include "G4EmStandardPhysics_option1.hh"
@@ -22,8 +23,6 @@
 #include "G4SystemOfUnits.hh"
 #include "G4LossTableManager.hh"
 #include "G4ProductionCutsTable.hh"
-
-#include "TrGEMStepMax.hh"
 
 #include "G4ProcessManager.hh"
 #include "G4ParticleTypes.hh"
