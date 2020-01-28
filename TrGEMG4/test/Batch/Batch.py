@@ -21,7 +21,7 @@ else: os.makedirs(Dirname)
 
 for index in range(nJobs):
     FileNamesStr = "{}/{}_{}".format(dirName, jobName, index)
-
+		print dirName
     print "@@ Writing run script..."
     jds = "%s/submit.jds" %Dirname 
     fout = open(jds, "w")
