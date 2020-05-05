@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Thu Jan 16 15:39:20 2020 by ROOT version 6.16/00
+// Wed Jan 15 14:47:16 2020 by ROOT version 6.16/00
 // from TTree HitsSteps/Tree keeps output from G4Step Geant4 Simulation
-// found on file: test_g.root
+// found on file: test.root
 //////////////////////////////////////////////////////////
 
 #ifndef HitsAnalysis_h
@@ -64,7 +64,7 @@ class HitsAnalysis {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
-   TFile 					*f ;
+	 TFile 					*f ;
 // Fixed size dimensions of array or collections stored in the TTree if any.
    static constexpr Int_t kMaxeventID = 1;
    static constexpr Int_t kMaxparentID = 1;
@@ -148,9 +148,9 @@ HitsAnalysis::HitsAnalysis(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("test_g_90_10_ArCO2.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("test_e-_5deg.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("test_g_90_10_ArCO2.root");
+         f = new TFile("test_e-_5deg.root");
       }
       f->GetObject("HitsSteps",tree);
 

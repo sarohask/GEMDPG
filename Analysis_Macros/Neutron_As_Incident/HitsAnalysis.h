@@ -148,9 +148,9 @@ HitsAnalysis::HitsAnalysis(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("test_n.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("test_n_60_40_ArCO2.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("test_n.root");
+         f = new TFile("test_n_60_40_ArCO2.root");
       }
       f->GetObject("HitsSteps",tree);
 
