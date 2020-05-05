@@ -35,7 +35,7 @@ int main(int argc, char** argv)
   	//G4VUserPhysicsList* physics = new QGSP_BERT();
 
   	runManager->SetUserInitialization(physics);
-  	runManager->SetUserInitialization(new TrGEMActionInitialization(argv[1]));
+  	runManager->SetUserInitialization(new TrGEMActionInitialization(argv[1], atol(argv[4])));
 
   	// initialize G4 kernel
   	runManager->Initialize();

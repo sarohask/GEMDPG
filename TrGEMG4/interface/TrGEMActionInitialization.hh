@@ -7,13 +7,14 @@
 class TrGEMActionInitialization : public G4VUserActionInitialization
 	{
   	public:
-    	TrGEMActionInitialization(char*);
+    	TrGEMActionInitialization(char*, double);
     	virtual ~TrGEMActionInitialization();
 
     	virtual void Build() const;
     	virtual void BuildForMaster() const;
   	private:
     	char* partName;
+    	double  inciAngle ;
 	};
 	
 #endif

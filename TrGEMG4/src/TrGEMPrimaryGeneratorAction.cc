@@ -13,8 +13,8 @@
 #include <TMath.h>
 #include <fstream>
 
-TrGEMPrimaryGeneratorAction::TrGEMPrimaryGeneratorAction(char* partName_) 
-	: partName(partName_)
+TrGEMPrimaryGeneratorAction::TrGEMPrimaryGeneratorAction(char* partName_, G4double angle_) 
+	: partName(partName_), angle(angle_)
 	{
   	G4int n_particle = 1;
   	G4ParticleDefinition* particlen = G4ParticleTable::GetParticleTable()-> FindParticle(partName);
@@ -42,10 +42,8 @@ void TrGEMPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   	G4double xxx,yyy;
   	G4double primaryEne;
 
-  	// set direction
-  	// neutron
-  	//Parallel Direction
-  	fParticleGun->SetParticleMomentumDirection((G4ThreeVector(0.,0.,1.))); 
+  	// set direction and angle
+  	fParticleGun->SetParticleMomentumDirection((G4ThreeVector(0.,cos((90-angle) * M_PI/180.0),cos(angle * M_PI/180.0))));
 
   	//set position  
   	G4double gX = G4UniformRand()*10.-5.;
