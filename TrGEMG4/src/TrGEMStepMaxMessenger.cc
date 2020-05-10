@@ -1,6 +1,6 @@
 
-#include "GEMDPG/TrGEMG4/interface/TrGEMStepMaxMessenger.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMStepMax.hh"
+#include "TrGEMStepMaxMessenger.hh"
+#include "TrGEMStepMax.hh"
 
 #include "G4UIcmdWithADoubleAndUnit.hh"
 #include "globals.hh"

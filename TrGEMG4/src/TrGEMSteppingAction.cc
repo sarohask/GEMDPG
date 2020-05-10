@@ -1,6 +1,6 @@
 
-#include "GEMDPG/TrGEMG4/interface/TrGEMSteppingAction.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "TrGEMSteppingAction.hh"
+#include "TrGEMAnalysis.hh"
 
 #include "G4SteppingManager.hh"
 #include "G4TouchableHistory.hh"

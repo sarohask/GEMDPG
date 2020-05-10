@@ -2,7 +2,7 @@
 #ifndef TrGEMPrimaryGeneratorAction_h
 #define TrGEMPrimaryGeneratorAction_h 1
 
-#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "TrGEMAnalysis.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "G4ParticleGun.hh"
 #include "globals.hh"

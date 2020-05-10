@@ -1,5 +1,5 @@
-#include "GEMDPG/TrGEMG4/interface/TrGEMEventAction.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "TrGEMEventAction.hh"
+#include "TrGEMAnalysis.hh"
 
 #include "G4Event.hh"
 #include "G4EventManager.hh"

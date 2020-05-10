@@ -1,5 +1,5 @@
-#include "GEMDPG/TrGEMG4/interface/TrGEMStackingAction.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "TrGEMStackingAction.hh"
+#include "TrGEMAnalysis.hh"
 
 #include "G4ClassificationOfNewTrack.hh"
 #include "G4Track.hh"

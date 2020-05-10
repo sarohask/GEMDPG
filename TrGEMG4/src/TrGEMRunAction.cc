@@ -1,6 +1,6 @@
 
-#include "GEMDPG/TrGEMG4/interface/TrGEMRunAction.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
+#include "TrGEMRunAction.hh"
+#include "TrGEMAnalysis.hh"
 
 #include "G4Run.hh"
 

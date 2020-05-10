@@ -1,6 +1,6 @@
 
-#include "GEMDPG/TrGEMG4/interface/TrGEMPhysicsList.hh"
-#include "GEMDPG/TrGEMG4/interface/TrGEMStepMax.hh"
+#include "TrGEMPhysicsList.hh"
+#include "TrGEMStepMax.hh"
 
 #include "G4EmStandardPhysics.hh"
 #include "G4EmStandardPhysics_option1.hh"
