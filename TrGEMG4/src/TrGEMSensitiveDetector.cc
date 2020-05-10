@@ -1,6 +1,6 @@
 
-#include "TrGEMSensitiveDetector.hh"
-#include "TrGEMAnalysis.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMSensitiveDetector.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4TrackingManager.hh"
 #include "G4Track.hh"

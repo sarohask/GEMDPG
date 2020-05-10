@@ -1,6 +1,6 @@
 
-#include "TrGEMDetectorConstruction.hh"
-#include "TrGEMSensitiveDetector.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMDetectorConstruction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMSensitiveDetector.hh"
 
 #include "G4NistManager.hh"
 #include "G4SDManager.hh"

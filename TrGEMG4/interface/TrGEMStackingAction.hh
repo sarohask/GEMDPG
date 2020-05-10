@@ -1,6 +1,6 @@
 
-#ifndef TRGEMSTACKINACTION_H
-#define TRGEMSTACKINACTION_H 1
+#ifndef TrGEMStackingAction_h
+#define TrGEMStackingAction_h 1
 
 #include "globals.hh"
 #include "G4UserStackingAction.hh"

@@ -1,6 +1,6 @@
 
-#ifndef StepMax_h
-#define StepMax_h 1
+#ifndef TrGEMStepMax_h
+#define TrGEMStepMax_h 1
 
 #include "globals.hh"
 #include "G4VDiscreteProcess.hh"

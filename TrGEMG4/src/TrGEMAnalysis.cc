@@ -1,6 +1,6 @@
 
-#include "TrGEMHit.hh"
-#include "TrGEMAnalysis.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMHit.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMAnalysis.hh"
 
 #include "G4UnitsTable.hh"
 #include "G4ParticleDefinition.hh"

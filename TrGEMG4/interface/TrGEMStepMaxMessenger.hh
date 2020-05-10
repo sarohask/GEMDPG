@@ -1,6 +1,6 @@
 
-#ifndef StepMaxMessenger_h
-#define StepMaxMessenger_h 1
+#ifndef TrGEMStepMaxMessenger_h
+#define TrGEMStepMaxMessenger_h 1
 
 #include "globals.hh"
 #include "G4UImessenger.hh"

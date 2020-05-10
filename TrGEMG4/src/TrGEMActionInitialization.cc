@@ -1,11 +1,11 @@
 
-#include "TrGEMActionInitialization.hh"
-#include "TrGEMPrimaryGeneratorAction.hh"
-#include "TrGEMRunAction.hh"
-#include "TrGEMEventAction.hh"
-#include "TrGEMSteppingAction.hh"
-#include "TrGEMStackingAction.hh"
-#include "TrGEMTrackingAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMActionInitialization.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMPrimaryGeneratorAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMRunAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMEventAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMSteppingAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMStackingAction.hh"
+#include "GEMDPG/TrGEMG4/interface/TrGEMTrackingAction.hh"
 
 #include "G4String.hh"
 
