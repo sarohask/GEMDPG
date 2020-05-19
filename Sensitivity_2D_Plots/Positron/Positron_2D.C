@@ -1,10 +1,10 @@
 void Positron_2D()
 {
 //=========Macro generated from canvas: c1/A Simple Graph Example
-//=========  (Sun May 17 14:37:54 2020) by ROOT version 6.16/00
+//=========  (Tue May 19 23:34:50 2020) by ROOT version 6.16/00
    TCanvas *c1 = new TCanvas("c1", "A Simple Graph Example",59,55,1686,1025);
    gStyle->SetOptStat(0);
-   c1->Range(-2.625,-15,3.625,110);
+   c1->Range(-2.625,-14.375,3.625,104.375);
    c1->SetFillColor(0);
    c1->SetBorderMode(0);
    c1->SetBorderSize(2);
@@ -14,7 +14,7 @@ void Positron_2D()
    c1->SetFrameBorderMode(0);
    Double_t xAxis1[61] = {0.01, 0.01211528, 0.01467799, 0.01778279, 0.02154435, 0.02610157, 0.03162278, 0.03831187, 0.04641589, 0.05623413, 0.06812921, 0.08254042, 0.1, 0.1211528, 0.1467799, 0.1778279, 0.2154435, 0.2610157, 0.3162278, 0.3831187, 0.4641589, 0.5623413, 0.6812921, 0.8254042, 1, 1.211528, 1.467799, 1.778279, 2.154435, 2.610157, 3.162278, 3.831187, 4.641589, 5.623413, 6.812921, 8.254042, 10, 12.11528, 14.67799, 17.78279, 21.54435, 26.10157, 31.62278, 38.31187, 46.41589, 56.23413, 68.12921, 82.54042, 100, 121.1528, 146.7799, 177.8279, 215.4435, 261.0157, 316.2278, 383.1187, 464.1589, 562.3413, 681.2921, 825.4042, 1000}; 
    
-   TH2D *h_AngleSensitivity = new TH2D("h_AngleSensitivity","",60, xAxis1,20,-2.5,97.5);
+   TH2D *h_AngleSensitivity = new TH2D("h_AngleSensitivity","",60, xAxis1,19,-2.5,92.5);
    h_AngleSensitivity->SetBinContent(63,0.008833026);
    h_AngleSensitivity->SetBinContent(64,0.008606747);
    h_AngleSensitivity->SetBinContent(65,0.008535298);
@@ -2230,7 +2230,7 @@ void Positron_2D()
    h_AngleSensitivity->SetContourLevel(48,0.7585776);
    h_AngleSensitivity->SetContourLevel(49,0.8709636);
    
-   TPaletteAxis *palette = new TPaletteAxis(3.031176,-2.424548,3.216746,97.5503,h_AngleSensitivity);
+   TPaletteAxis *palette = new TPaletteAxis(3.031176,-2.428321,3.220457,92.54779,h_AngleSensitivity);
    palette->SetLabelColor(1);
    palette->SetLabelFont(42);
    palette->SetLabelOffset(0.005);
@@ -2250,13 +2250,13 @@ void Positron_2D()
    h_AngleSensitivity->GetXaxis()->SetTitle(" Energy [MeV] ");
    h_AngleSensitivity->GetXaxis()->SetLabelFont(42);
    h_AngleSensitivity->GetXaxis()->SetLabelSize(0.03);
-   h_AngleSensitivity->GetXaxis()->SetTitleSize(0.03);
+   h_AngleSensitivity->GetXaxis()->SetTitleSize(0.035);
    h_AngleSensitivity->GetXaxis()->SetTitleOffset(1.3);
    h_AngleSensitivity->GetXaxis()->SetTitleFont(42);
    h_AngleSensitivity->GetYaxis()->SetTitle(" Incident Angle [Degrees] ");
    h_AngleSensitivity->GetYaxis()->SetLabelFont(42);
    h_AngleSensitivity->GetYaxis()->SetLabelSize(0.03);
-   h_AngleSensitivity->GetYaxis()->SetTitleSize(0.03);
+   h_AngleSensitivity->GetYaxis()->SetTitleSize(0.035);
    h_AngleSensitivity->GetYaxis()->SetTitleFont(42);
    h_AngleSensitivity->GetZaxis()->SetLabelFont(42);
    h_AngleSensitivity->GetZaxis()->SetLabelSize(0.035);
