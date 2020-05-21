@@ -1,13 +1,15 @@
 void SensitivityAngle_100()
 {
 //=========Macro generated from canvas: c1/A Simple Graph Example
-//=========  (Thu May 21 21:49:05 2020) by ROOT version 6.16/00
+//=========  (Thu May 21 23:47:00 2020) by ROOT version 6.16/00
    TCanvas *c1 = new TCanvas("c1", "A Simple Graph Example",59,55,1686,1025);
-   c1->Range(-13.75,-3.412629,98.75,0.7136588);
+   c1->Range(-13.59131,-3.413148,98.92539,0.7141779);
    c1->SetFillColor(0);
    c1->SetBorderMode(0);
    c1->SetBorderSize(2);
    c1->SetLogy();
+   c1->SetTickx(1);
+   c1->SetTicky(1);
    c1->SetFrameBorderMode(0);
    c1->SetFrameBorderMode(0);
    
@@ -47,6 +49,7 @@ void SensitivityAngle_100()
    h_AngleSensitivity__1->GetYaxis()->SetLabelFont(42);
    h_AngleSensitivity__1->GetYaxis()->SetLabelSize(0.03);
    h_AngleSensitivity__1->GetYaxis()->SetTitleSize(0.035);
+   h_AngleSensitivity__1->GetYaxis()->SetTitleOffset(1);
    h_AngleSensitivity__1->GetYaxis()->SetTitleFont(42);
    h_AngleSensitivity__1->GetZaxis()->SetLabelFont(42);
    h_AngleSensitivity__1->GetZaxis()->SetLabelSize(0.035);
@@ -217,7 +220,7 @@ tex->SetNDC();
    tex->SetLineWidth(2);
    tex->Draw();
    
-   TLegend *leg = new TLegend(0.1248331,0.6614786,0.4085447,0.8702983,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.1247031,0.6438632,0.4239905,0.8571429,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
