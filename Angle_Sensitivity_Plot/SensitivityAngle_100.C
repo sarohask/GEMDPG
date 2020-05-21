@@ -1,9 +1,9 @@
 void SensitivityAngle_100()
 {
 //=========Macro generated from canvas: c1/A Simple Graph Example
-//=========  (Wed May 20 13:49:48 2020) by ROOT version 6.16/00
+//=========  (Thu May 21 21:49:05 2020) by ROOT version 6.16/00
    TCanvas *c1 = new TCanvas("c1", "A Simple Graph Example",59,55,1686,1025);
-   c1->Range(-13.75,-3.450258,98.75,1.052318);
+   c1->Range(-13.75,-3.412629,98.75,0.7136588);
    c1->SetFillColor(0);
    c1->SetBorderMode(0);
    c1->SetBorderSize(2);
@@ -31,12 +31,12 @@ void SensitivityAngle_100()
    h_AngleSensitivity__1->SetBinContent(17,0.0157242);
    h_AngleSensitivity__1->SetBinContent(18,0.0290925);
    h_AngleSensitivity__1->SetMinimum(0.001);
-   h_AngleSensitivity__1->SetMaximum(4);
+   h_AngleSensitivity__1->SetMaximum(2);
    h_AngleSensitivity__1->SetEntries(18);
    h_AngleSensitivity__1->SetStats(0);
    h_AngleSensitivity__1->SetLineWidth(2);
    h_AngleSensitivity__1->SetMarkerStyle(20);
-   h_AngleSensitivity__1->SetMarkerSize(1.3);
+   h_AngleSensitivity__1->SetMarkerSize(1.2);
    h_AngleSensitivity__1->GetXaxis()->SetTitle("Incident Angle [Degrees]");
    h_AngleSensitivity__1->GetXaxis()->SetLabelFont(42);
    h_AngleSensitivity__1->GetXaxis()->SetLabelSize(0.03);
@@ -88,7 +88,7 @@ void SensitivityAngle_100()
    ci = TColor::GetColor("#00cc00");
    h_AngleSensitivity__2->SetMarkerColor(ci);
    h_AngleSensitivity__2->SetMarkerStyle(20);
-   h_AngleSensitivity__2->SetMarkerSize(1.3);
+   h_AngleSensitivity__2->SetMarkerSize(1.2);
    h_AngleSensitivity__2->GetXaxis()->SetTitle(" Incident Angle [Degrees] ");
    h_AngleSensitivity__2->GetXaxis()->SetLabelFont(42);
    h_AngleSensitivity__2->GetXaxis()->SetLabelSize(0.035);
@@ -125,7 +125,7 @@ void SensitivityAngle_100()
    h_AngleSensitivity__3->SetBinContent(15,0.3205599);
    h_AngleSensitivity__3->SetBinContent(16,0.4082082);
    h_AngleSensitivity__3->SetBinContent(17,0.5626016);
-   h_AngleSensitivity__3->SetBinContent(18,0.6769079);
+   h_AngleSensitivity__3->SetBinContent(18,0.6770089);
    h_AngleSensitivity__3->SetEntries(18);
    h_AngleSensitivity__3->SetStats(0);
 
@@ -136,7 +136,7 @@ void SensitivityAngle_100()
    ci = TColor::GetColor("#0000ff");
    h_AngleSensitivity__3->SetMarkerColor(ci);
    h_AngleSensitivity__3->SetMarkerStyle(20);
-   h_AngleSensitivity__3->SetMarkerSize(1.3);
+   h_AngleSensitivity__3->SetMarkerSize(1.2);
    h_AngleSensitivity__3->GetXaxis()->SetTitle(" Incident Angle [Degrees] ");
    h_AngleSensitivity__3->GetXaxis()->SetLabelFont(42);
    h_AngleSensitivity__3->GetXaxis()->SetLabelSize(0.035);
@@ -184,7 +184,7 @@ void SensitivityAngle_100()
    ci = TColor::GetColor("#ff0000");
    h_AngleSensitivity__4->SetMarkerColor(ci);
    h_AngleSensitivity__4->SetMarkerStyle(20);
-   h_AngleSensitivity__4->SetMarkerSize(1.3);
+   h_AngleSensitivity__4->SetMarkerSize(1.2);
    h_AngleSensitivity__4->GetXaxis()->SetTitle(" Incident Angle [Degrees] ");
    h_AngleSensitivity__4->GetXaxis()->SetLabelFont(42);
    h_AngleSensitivity__4->GetXaxis()->SetLabelSize(0.035);
@@ -217,11 +217,11 @@ tex->SetNDC();
    tex->SetLineWidth(2);
    tex->Draw();
    
-   TLegend *leg = new TLegend(0.1324228,0.6891348,0.435867,0.861167,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.1248331,0.6614786,0.4085447,0.8702983,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
+   leg->SetLineWidth(0);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
    TLegendEntry *entry=leg->AddEntry("NULL","Incident Particle Energy : 100 MeV","h");
@@ -233,43 +233,49 @@ tex->SetNDC();
    entry->SetMarkerSize(1);
    entry->SetTextAlign(22);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("h_AngleSensitivity","neutron","p");
+   entry=leg->AddEntry("h_AngleSensitivity","neutron","pl");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.2);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("h_AngleSensitivity","gamma","p");
-   entry->SetLineColor(1);
+   entry=leg->AddEntry("h_AngleSensitivity","gamma","pl");
+
+   ci = TColor::GetColor("#00cc00");
+   entry->SetLineColor(ci);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   entry->SetLineWidth(2);
 
    ci = TColor::GetColor("#00cc00");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.2);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("h_AngleSensitivity","e+","p");
-   entry->SetLineColor(1);
+   entry=leg->AddEntry("h_AngleSensitivity","e+","pl");
+
+   ci = TColor::GetColor("#0000ff");
+   entry->SetLineColor(ci);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   entry->SetLineWidth(2);
 
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.2);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("h_AngleSensitivity","e-","p");
-   entry->SetLineColor(1);
+   entry=leg->AddEntry("h_AngleSensitivity","e-","pl");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   entry->SetLineWidth(2);
 
    ci = TColor::GetColor("#ff0000");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.2);
    entry->SetTextFont(42);
    leg->Draw();
    c1->Modified();
