@@ -35,7 +35,7 @@ class TrGEMAnalysis
     	void EndOfEvent();
     	void PrepareNewRun();
     	void EndOfRun();
-    	void SavePrimary(G4double aPrimEnergy, G4int aPrimParticlePDG, G4double aPrimPositionX, G4double aPrimPositionY, G4double aPrimPositionZ);
+    	void SavePrimary(G4double aPrimAngle, G4int aPrimParticlePDG, G4double aPrimPositionX, G4double aPrimPositionY, G4double aPrimPositionZ);
     	void SetValuesForInteractingEvents ( G4int evtNo, G4int hitTNo, G4int hitNo, TrGEMHit* hit);
     	void SetValuesForNonInteractingEvents(G4int evtNo, G4int hitTNo);
     	void SetKickStart(G4bool aKickstart) ;
@@ -60,7 +60,7 @@ class TrGEMAnalysis
    		string		 		volName_;
    		
   		//tEvents  		
-  		G4double 					primaryEnergy;
+  		G4double 					primaryAngle;
   		
 	};
 

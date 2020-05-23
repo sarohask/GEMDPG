@@ -14,7 +14,7 @@ class TrGEMActionInitialization : public G4VUserActionInitialization
     	virtual void BuildForMaster() const;
   	private:
     	char* partName;
-    	double  inciAngle ;
-	};
-	
+    	double  inciEnergy;
+    };
+    
 #endif

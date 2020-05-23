@@ -65,7 +65,7 @@ void TrGEMAnalysis::PrepareNewRun()
    	tHits->Branch("Charge", &charge_);
    	tHits->Branch("StepNumber", &stepNum_, "stepNum_/I");
    	tHits->Branch("VolumeName", &volName_);  
-   	tHits->Branch("PrimaryEnergy",  &primaryEnergy);
+   	tHits->Branch("PrimaryAngle",  &primaryAngle);
 	}
 
 void TrGEMAnalysis::PrepareNewEvent()
@@ -91,9 +91,9 @@ void TrGEMAnalysis::EndOfRun()
   	delete file ;
 	}
 
-void TrGEMAnalysis::SavePrimary(G4double aPrimEnergy, G4int aPrimParticlePDG, G4double aPrimPositionX, G4double aPrimPositionY, G4double aPrimPositionZ)
+void TrGEMAnalysis::SavePrimary(G4double aPrimAngle, G4int aPrimParticlePDG, G4double aPrimPositionX, G4double aPrimPositionY, G4double aPrimPositionZ)
 	{
-  	primaryEnergy = aPrimEnergy / MeV;
+  	primaryAngle = aPrimAngle ;
   	//G4cout<<"Analysis enrgy.............................................................. = "<<primaryEnergy<<G4endl;
 	}
 	

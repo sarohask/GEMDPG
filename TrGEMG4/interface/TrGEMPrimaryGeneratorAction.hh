@@ -15,7 +15,7 @@ class G4Event;
 class TrGEMPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 	{
   	public:
-    	TrGEMPrimaryGeneratorAction(char*, G4double ang);        
+    	TrGEMPrimaryGeneratorAction(char*, G4double ener);        
     	~TrGEMPrimaryGeneratorAction();
 
   	public:
@@ -24,11 +24,13 @@ class TrGEMPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
             
   	private:
     	char*           		partName;
+    	G4double						energy;
     	G4double						angle;
     	G4ParticleGun*  		fParticleGun;
-    	G4int           		eneRange;
+    	G4int           		fixedEnergy;
+    	G4double						angRange;
     	G4int           		primPDG;
-    	G4double						primEnergy ;
+    	G4double						primAngle ;
     	G4double						primPosX ;
     	G4double						primPosY ;
     	G4double						primPosZ ;

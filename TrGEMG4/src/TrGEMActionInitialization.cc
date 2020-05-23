@@ -9,8 +9,8 @@
 
 #include "G4String.hh"
 
-TrGEMActionInitialization::TrGEMActionInitialization(char* particleName, G4double incidentAngle)
-	: G4VUserActionInitialization(), partName(particleName), inciAngle(incidentAngle)
+TrGEMActionInitialization::TrGEMActionInitialization(char* particleName, G4double incidentEnergy)
+	: G4VUserActionInitialization(), partName(particleName), inciEnergy(incidentEnergy)
 	{}
 
 TrGEMActionInitialization::~TrGEMActionInitialization()
@@ -24,7 +24,7 @@ void TrGEMActionInitialization::BuildForMaster() const
 
 void TrGEMActionInitialization::Build() const 
 	{
-  	SetUserAction(new TrGEMPrimaryGeneratorAction(partName, inciAngle));
+  	SetUserAction(new TrGEMPrimaryGeneratorAction(partName, inciEnergy));
 	
   	TrGEMRunAction* runAction = new TrGEMRunAction;
   	SetUserAction(runAction);
